@@ -1,0 +1,35 @@
+package Clase01;
+import java.util.Scanner;
+
+public class AreaVolumen {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        float area, radio, altura, pi, volumen;
+        
+        System.out.print("Ingrese el radio del cilindro: ");
+        radio = Float.parseFloat(teclado.nextLine());
+        System.out.print("Ingrese la altura del cilindro: ");
+        altura = Float.parseFloat(teclado.nextLine());
+        System.out.print("Ingrese el valor de pi: ");
+        pi = Float.parseFloat(teclado.nextLine());
+        
+        area = 2 * pi *radio * (radio + altura);
+        
+        System.out.println("El area del cilindro es:" + area);
+        
+        System.out.println("----------------------------------------");
+        System.out.println(" ---------Hallaremos el volumen---------");
+        System.out.println("----------------------------------------");
+        
+        System.out.print("Ingrese el radio del cilindro: ");
+        radio = Float.parseFloat(teclado.nextLine());
+        System.out.print("Ingrese la altura del cilindro: ");
+        altura = Float.parseFloat(teclado.nextLine());
+        System.out.print("Ingrese el valor de pi: ");
+        pi = Float.parseFloat(teclado.nextLine());
+        
+        volumen = pi * (radio * radio) * altura;
+        
+        System.out.println("El volumen del cilindro es:" + volumen);
+    }
+}
