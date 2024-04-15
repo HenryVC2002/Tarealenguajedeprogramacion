@@ -1,0 +1,30 @@
+package Clase01;
+import java.util.Scanner;
+
+public class AreaPerimetro {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        float base, altura, area, perimetro;
+        
+        System.out.print("Ingrese la base: ");
+        base = Float.parseFloat(teclado.nextLine());
+        System.out.print("Ingrese la altura: ");
+        altura = Float.parseFloat(teclado.nextLine());
+        
+        area = base * altura;
+        
+        System.out.println("El area del rectangulo es : " + area);
+        System.out.println("--------------------------");
+        System.out.println(" -------------------------");
+        System.out.println("--------------------------");
+        
+        System.out.print("Ingrese la base: ");
+        base = Float.parseFloat(teclado.nextLine());
+        System.out.print("Ingrese la altura: ");
+        altura = Float.parseFloat(teclado.nextLine());
+        
+        perimetro = 2 * (base * altura);
+        
+        System.out.println("El perimetro del rectangulo es : " + perimetro);
+    }
+}
