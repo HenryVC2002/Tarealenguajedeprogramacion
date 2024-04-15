@@ -1,0 +1,20 @@
+package Clase01;
+import java.util.Scanner;
+
+public class IMC {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        float peso, estatura, imc;
+        
+        System.out.print("Ingrese el peso del paciente: ");
+        peso = Float.parseFloat(teclado.nextLine());
+        System.out.print("Ingrese la estatura del paciente: ");
+        estatura = Float.parseFloat(teclado.nextLine());
+        
+        imc = peso / (estatura * estatura);
+        
+        System.out.println("El peso es : " + peso);
+        System.out.println("La estatura es : " + estatura);
+        System.out.println("El Indice de masa Corporal es : " + imc);
+    }
+}
